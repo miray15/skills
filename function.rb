@@ -14,12 +14,18 @@
 
 # 3. Write a function that takes in two numbers and returns the first number subtracted by the second. Then run the function and print the result.
 
-def subtract(number1, number2)
-  return number1 - number2
-end 
-p subtract(5, 1)
+# def subtract(number1, number2)
+#   return number1 - number2
+# end 
+# p subtract(5, 1)
 
 # 4. Write a function that takes in a number and returns the number times itself. Then run the function and print the result.
+
+def times(number)
+  return number * number
+end 
+p times(5)
+
 
 # 5. Write a function that takes in a string and returns the first letter of the string. Then run the function and print the result.
 
