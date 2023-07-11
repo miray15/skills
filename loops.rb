@@ -54,14 +54,21 @@
 
 # 7. Write a while loop that prints the numbers 50 to 70.
 
-index = 50
-while index < 70 
-  index = index + 1
-  p index 
-end 
+# index = 50
+# while index < 70 
+#   index = index + 1
+#   p index 
+# end 
 
 
 # 8. Write a while loop that prints the phrase "Around the world" 144 times.
+
+count = 0 
+while count < 140
+  p "Around the world"
+  count = count + 1
+end 
+p count 
 
 # 9. Write a while loop that asks the user to enter a word and will run forever until the user enters a word with more than 5 letters.
 
