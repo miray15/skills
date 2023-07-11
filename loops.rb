@@ -63,16 +63,32 @@
 
 # 8. Write a while loop that prints the phrase "Around the world" 144 times.
 
-count = 0 
-while count < 140
-  p "Around the world"
-  count = count + 1
-end 
-p count 
+# count = 0 
+# while count < 140
+#   p "Around the world"
+#   count = count + 1
+# end 
+# p count 
 
 # 9. Write a while loop that asks the user to enter a word and will run forever until the user enters a word with more than 5 letters.
 
+# while true  
+#   p "enter a word: "
+#   word = gets.chomp 
+#   if word.length > 5
+#     p "you got it"
+#     break 
+#   end 
+# end 
+
 # 10. Write a while loop that prints the even numbers from 2 to 40.
+
+
+index = 0 
+while index < 42
+  p index 
+  index += 2 
+end 
 
 
 # SOLUTIONS: https://gist.github.com/peterxjang/c4ec0e0f8f6e123d65ada9bf3100068b
