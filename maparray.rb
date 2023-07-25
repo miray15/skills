@@ -39,15 +39,22 @@
 #  4. Start with an array of numbers and create a new array with each number plus 7.
 #     For example, [1, 2, 3] becomes [8, 9, 10].
 
-numbers = [1, 2, 3]
-new_numbers = []
-numbers.each do |number|
-  new_numbers << number + 7
-end 
-p new_numbers
+# numbers = [1, 2, 3]
+# new_numbers = []
+# numbers.each do |number|
+#   new_numbers << number + 7
+# end 
+# p new_numbers
 
 #  5. Start with an array of strings and create a new array with each string's length.
 #     For example, ["hello", "goodbye"] becomes [5, 7].
+
+strings = ["hello", "goodbye"]
+new_string = []
+strings.each do |string|
+  new_string << string.length
+end 
+p new_string
 
 #  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
