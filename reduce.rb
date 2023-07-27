@@ -50,17 +50,28 @@
  
 # p true_minimum
 
-numbers = [5, 10, 8, 3]
-minimum = numbers[0]
-numbers.each do |number|
-  if number < minimum
-    minimum = number
-  end
-end
-p minimum
+# numbers = [5, 10, 8, 3]
+# minimum = numbers[0]
+# numbers.each do |number|
+#   if number < minimum
+#     minimum = number
+#   end
+# end
+# p minimum
 
 #  5. Start with an array of strings and compute the total length of all the strings.
 #     For example, ["volleyball", "basketball", "badminton"] becomes 29.
+
+strings = 
+["volleyball", "basketball", "badminton"]
+number = 0
+
+strings.each do |string|
+  number += string.length 
+end 
+p number
+  
+
 
 #  6. Start with an array of hashes and find the hash with the lowest price (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
