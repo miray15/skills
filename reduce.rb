@@ -62,19 +62,29 @@
 #  5. Start with an array of strings and compute the total length of all the strings.
 #     For example, ["volleyball", "basketball", "badminton"] becomes 29.
 
-strings = 
-["volleyball", "basketball", "badminton"]
-number = 0
+# strings = 
+# ["volleyball", "basketball", "badminton"]
+# number = 0
 
-strings.each do |string|
-  number += string.length 
-end 
-p number
+# strings.each do |string|
+#   number += string.length 
+# end 
+# p number
   
 
 
 #  6. Start with an array of hashes and find the hash with the lowest price (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
+
+hashes = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+lowest_price = hashes[0]
+
+hashes.each do |hash|
+  if hash[:price] < lowest_price[:price] 
+    lowest_price = hash 
+  end 
+end 
+p lowest_price
 
 #  7. Start with an array of numbers and compute product of all the numbers.
 #     For example, [5, 10, 8, 3] becomes 1200.
