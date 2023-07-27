@@ -21,17 +21,43 @@
 #  3. Start with an array of hashes and compute the sum of the prices (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes 105.
 
-hashes = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
-sum = 0
+# hashes = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+# sum = 0
 
-hashes.each do |hash|
-  sum += hash[:price]
-end 
-p sum 
+# hashes.each do |hash|
+#   sum += hash[:price]
+# end 
+# p sum 
 
 
 #  4. Start with an array of numbers and compute the the minumum number.
 #     For example, [5, 10, 8, 3, 9] becomes 3.
+
+# numbers = [5, 10, 8, 3, 9]
+# minimum = []
+# true_minimum = []
+# index = 0 
+# index2 = 1
+# while index < numbers.length 
+#   if numbers[index] < numbers[index2 + 1]
+#     minimum << numbers[index]
+#   end 
+#   index = index + 1 
+# end 
+# if minimum[index] < minimum[index2 + 1]
+#  then true_minimum << minimum[index]
+# end 
+ 
+# p true_minimum
+
+numbers = [5, 10, 8, 3]
+minimum = numbers[0]
+numbers.each do |number|
+  if number < minimum
+    minimum = number
+  end
+end
+p minimum
 
 #  5. Start with an array of strings and compute the total length of all the strings.
 #     For example, ["volleyball", "basketball", "badminton"] becomes 29.
