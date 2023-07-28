@@ -110,14 +110,14 @@
 #  9. Start with an array of hashes and find the hash with the shortest name (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
 
-products = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] 
-shortest_name_product = products[0]
-products.each do |product|
-  if product[:name].length  < shortest_name_product[:name].length
-    shortest_name_product = product
-  end 
-end 
-p shortest_name_product
+# products = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] 
+# shortest_name_product = products[0]
+# products.each do |product|
+#   if product[:name].length  < shortest_name_product[:name].length
+#     shortest_name_product = product
+#   end 
+# end 
+# p shortest_name_product
 
 
 # products = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
@@ -132,6 +132,14 @@ p shortest_name_product
 # 10. Start with an array of numbers and compute the maximum number.
 #     For example, [5, 10, 8, 3] becomes 10.
 
+numbers = [5, 10, 8, 3]
+maximum = numbers[0]
+numbers.each do |number|
+if number > maximum
+  maximum = number
+end 
+end 
+p maximum
 
 # SOLUTIONS (using while loop): https://gist.github.com/peterxjang/376c8931a48549889eb3c9bc091e9f43
 # SOLUTIONS (using .each shortcut): https://gist.github.com/peterxjang/379c9945774f51027750c59d6e4395df
