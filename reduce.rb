@@ -99,16 +99,35 @@
 #  8. Start with an array of strings and combine them all into a single string, separated by dashes.
 #     For example, ["volleyball", "basketball", "badminton"] becomes "-volleyball-basketball-badminton-".
 
-strings = ["volleyball", "basketball", "badminton"]
-combined = ""
-strings.each do |string|
-  combined << string + "-"
-end 
-p combined
+# strings = ["volleyball", "basketball", "badminton"]
+# combined = ""
+# strings.each do |string|
+#   combined << string + "-"
+# end 
+# p combined
 
 
 #  9. Start with an array of hashes and find the hash with the shortest name (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
+
+products = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] 
+shortest_name_product = products[0]
+products.each do |product|
+  if product[:name].length  < shortest_name_product[:name].length
+    shortest_name_product = product
+  end 
+end 
+p shortest_name_product
+
+
+# products = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+# shortest_name_product = products[0]
+# products.each do |product|
+#   if product[:name].length < shortest_name_product[:name].length
+#     shortest_name_product = product
+#   end
+# end
+# p shortest_name_product
 
 # 10. Start with an array of numbers and compute the maximum number.
 #     For example, [5, 10, 8, 3] becomes 10.
