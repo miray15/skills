@@ -101,17 +101,26 @@
 #  9. Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
 
-hashes = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
-less_than_10 = []
-hashes.each do |hash|
-  if hash[:price] < 10
-    then less_than_10 << hash 
-  end 
-end 
-p less_than_10
+# hashes = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+# less_than_10 = []
+# hashes.each do |hash|
+#   if hash[:price] < 10
+#     then less_than_10 << hash 
+#   end 
+# end 
+# p less_than_10
 
 # 10. Start with an array of numbers and create a new array with only the odd numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
+
+numbers = [2, 4, 5, 1, 8, 9, 7]
+odd = []
+numbers.each do |number|
+  if not number % 2 == 0
+    then odd << number
+  end 
+end 
+p odd 
 
 
 # SOLUTIONS (using while loop): https://gist.github.com/peterxjang/7de16ed43ea506e98df3fa15074b84f8
