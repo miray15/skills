@@ -64,18 +64,27 @@
 #  6. Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
 
-hashes =  [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] 
-less_than_six = []
-hashes.each do |hash|
-  if hash[:name].length < 6
-    then less_than_six << hash 
-  end 
-end 
-p less_than_six
+# hashes =  [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] 
+# less_than_six = []
+# hashes.each do |hash|
+#   if hash[:name].length < 6
+#     then less_than_six << hash 
+#   end 
+# end 
+# p less_than_six
 
 
 #  7. Start with an array of numbers and create a new array with only the numbers less than 10.
 #     For example, [8, 23, 0, 44, 1980, 3] becomes [8, 0, 3].
+
+numbers = [8, 23, 0, 44, 1980, 3]
+less_than_10 = []
+numbers.each do |number|
+  if number < 10 
+    then less_than_10 << number
+  end 
+end 
+p less_than_10
 
 #  8. Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
 #     For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
