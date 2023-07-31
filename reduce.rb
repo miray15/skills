@@ -132,14 +132,14 @@
 # 10. Start with an array of numbers and compute the maximum number.
 #     For example, [5, 10, 8, 3] becomes 10.
 
-numbers = [5, 10, 8, 3]
-maximum = numbers[0]
-numbers.each do |number|
-if number > maximum
-  maximum = number
-end 
-end 
-p maximum
+# numbers = [5, 10, 8, 3]
+# maximum = numbers[0]
+# numbers.each do |number|
+# if number > maximum
+#   maximum = number
+# end 
+# end 
+# p maximum
 
 # SOLUTIONS (using while loop): https://gist.github.com/peterxjang/376c8931a48549889eb3c9bc091e9f43
 # SOLUTIONS (using .each shortcut): https://gist.github.com/peterxjang/379c9945774f51027750c59d6e4395df
